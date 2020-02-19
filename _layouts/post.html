@@ -5,17 +5,17 @@ layout: default
     <div class="inner">
         <main class="site-main">
             <article class="post">
-                <header class="entry-header"> 
+                <header class="entry-header">
                     <div class="entry-header-wrap">
                         {% if page.banner_image %}
                         <div class="post-thumbnail">
-                            <img src="{{ "https://static.raymondcamden.com" | append: page.banner_image }}" alt="{% if page.banner_image_alt %}{{ page.banner_image_alt }}{% else %}{{ page.title }}{% endif %}">
+                            <img src="{{ page.banner_image }}" alt="{% if page.banner_image_alt %}{{ page.banner_image_alt }}{% else %}{{ page.title }}{% endif %}">
                         </div><!-- .post-thumbnail -->
                         {% endif %}
                         <h1 class="entry-title">{{page.title}}</h1>
                     </div><!-- .entry-header-wrap -->
                     <div class="entry-meta">
-                        by <span class="post-author">{{site.author_name}}</span> on <time class="published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time> | <a href="#comments"><span class="disqus-comment-count" data-disqus-url="https://www.raymondcamden.com{{ page.url }}">Comments</span></a>
+                        by <span class="post-author">{{site.author_name}}</span> on <time class="published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time> | <a href="#comments"><span class="disqus-comment-count" data-disqus-url="https://www.thebob.dev{{ page.url }}">Comments</span></a>
                     </div><!-- .entry-meta -->
                 </header><!-- .entry-header -->
                 <div class="entry-content">
@@ -41,27 +41,14 @@ layout: default
 
                 </footer><!-- .entry-footer -->
             </article><!-- .post -->
-            <div class="author-box">
-                <div class="author-info">
-                    <div class="author-avatar" style="background-image: url({{site.baseurl}}{{ site.author_image }})"><span class="screen-reader-text">{{ site.author_name }}'s Picture</span></div>
-                    <div class="author-details">
-                        <h2 class="author-title">About {{ site.author_name }}</h2>
-                        <p class="author-bio">{{ site.author_bio }}
-               			If you like this article, please consider visiting my <a href="http://www.amazon.com/gp/registry/wishlist/2TCL1D08EZEYE/ref=cm_wl_rlist_go_v?">Amazon Wishlist</a> or <a href="https://paypal.me/RaymondCamden">donating via PayPal</a> to show your support. You can even
-                           <a href="https://www.buymeacoffee.com/raymondcamden">buy me a coffee</a>!
-                        </p>
-                        <span class="author-location"><i class="fa-map-marker" aria-hidden="true"></i> {{ site.author_location }}</span>
-                        <span class="author-website"><i class="fa-chain" aria-hidden="true"></i> <a href="{{ site.author_url }}" target="_blank"> {{ site.author_url }}</a></span>
-                    </div><!-- .author-details -->
-                </div><!-- .author-info -->
-            </div><!-- .author-box -->
+
             <nav class="post-navigation">
                 <h2 class="screen-reader-text">Post navigation</h2>
                 {% if page.previous.url %}
                 <div class="nav-previous">
                     <div class="nav-inside">
                         {% if page.previous.banner_image %}
-                        <a href="{{ site.baseurl }}{{page.previous.url}}" class="nav-thumb" style="background-image: url({{ "https://static.raymondcamden.com" | append: page.previous.banner_image }})"></a>
+                        <a href="{{ site.baseurl }}{{page.previous.url}}" class="nav-thumb" style="background-image: url({{ "https://static.thebob.dev" | append: page.previous.banner_image }})"></a>
                         {% endif %}
                         <div class="nav-before">Previous</div>
                         <div class="nav-title"><a href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a></div>
@@ -73,7 +60,7 @@ layout: default
                 <div class="nav-next">
                     <div class="nav-inside">
                         {% if page.next.banner_image %}
-                        <a href="{{ site.baseurl }}{{page.next.url}}" class="nav-thumb" style="background-image: url({{ "https://static.raymondcamden.com" | append: page.next.banner_image }})"></a>
+                        <a href="{{ site.baseurl }}{{page.next.url}}" class="nav-thumb" style="background-image: url({{ "https://static.thebob.dev" | append: page.next.banner_image }})"></a>
                         {% endif %}
                         <div class="nav-before">Next</div>
                         <div class="nav-title"><a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a></div>

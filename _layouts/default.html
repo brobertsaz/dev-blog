@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">    
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title> 
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta name="twitter:creator" content="@raymondcamden" />    
-    <meta name="twitter:site" content="@raymondcamden" />    
+    <meta name="twitter:creator" content="@bobr_az" />
+    <meta name="twitter:site" content="@bobr_az" />
     {% if page.description %}
     <meta name="twitter:description" content="{{page.description}}" />
     {% endif %}
     {% if page.banner_image %}
-    <meta name="twitter:image" content="{{ "https://static.raymondcamden.com" | append: page.banner_image }}" />
+    <!-- <meta name="twitter:image" content="{{ "https://static.thebob.dev" | append: page.banner_image }}" /> -->
     {% endif %}
     <link rel="manifest" href="/manifest.json">
     <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
@@ -22,8 +22,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/prism.css" />
     <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="webmention" href="https://webmention.io/www.raymondcamden.com/webmention" />
-    <link rel="pingback" href="https://webmention.io/www.raymondcamden.com/xmlrpc" />
+
 </head>
 <body>
     <nav id="top" class="site-navigation">
@@ -40,7 +39,7 @@
                     <a class="{{ current }}" href="{{ site.baseurl}}{{ link.url }}">{{ link.text }}</a>
                   </li>
                 {% endfor %}
-                </ul>        
+                </ul>
             </div><!-- .nav-menu -->
             <a class="subscribe-button fa-feed square fill-horizontal" href="{{site.baseurl}}/feed.xml"><span class="screen-reader-text">Subscribe</span></a>
         </div><!-- .inner -->
@@ -56,7 +55,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/plugins.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/custom.js"></script>
-    <script id="dsq-count-scr" src="//raymondcamden.disqus.com/count.js" async></script>
+    <script id="dsq-count-scr" src="//thebobdev.disqus.com/count.js" async></script>
     <script src="{{site.baseurl}}/js/prism.js"></script>
 </body>
 </html>

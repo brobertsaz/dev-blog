@@ -10,22 +10,21 @@
 
 var disqus_config = function () {
 	{% if page.guid %}
-	this.page.url = 'https://www.raymondcamden.com{{ page.url }}'; 
-	this.page.identifier = '/?p={{ page.guid }}'; 
+	this.page.url = 'https://thebob.dev{{ page.url }}';
+	this.page.identifier = '/?p={{ page.guid }}';
 	{% elsif page.oldurl %}
-	this.page.url = '{{ page.oldurl }}'; 
+	this.page.url = '{{ page.oldurl }}';
 	{% else %}
-	this.page.url = 'http://www.raymondcamden.com{{ page.url }}'; 
+	this.page.url = 'http://thebob.dev{{ page.url }}';
 	{% endif %}
 };
 
 
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
-s.src = 'https://raymondcamden.disqus.com/embed.js';
+s.src = 'https://thebobdev.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
