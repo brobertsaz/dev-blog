@@ -8,7 +8,7 @@ button,
 input,
 select,
 textarea {
-    font-family: 'Lato', Calibri, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Nunito', Calibri, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -217,7 +217,7 @@ textarea {
     border-radius: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing:    border-box;
-    box-sizing:         border-box; 
+    box-sizing:         border-box;
     color: lighten( $mine-shaft, 4% );
     font-size: 16px;
     max-width: 100%;
@@ -392,7 +392,7 @@ video {
     text-shadow: none;
 }
 
-/* Syntax Highlighter - Solarized Light 
+/* Syntax Highlighter - Solarized Light
 http://ethanschoonover.com/solarized
 
 SOLARIZED HEX      ROLE
