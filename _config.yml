@@ -33,8 +33,8 @@ navigation:
   url: /
 - text: About
   url: /about/
-# - text: Speaking
-#   url: /speaking/
+- text: Resume
+  url: /resume/
 # - text: Contact
 #   url: /contact/
 # - text: Search
