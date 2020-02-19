@@ -35,8 +35,8 @@ navigation:
   url: /about/
 - text: Resume
   url: /resume/
-# - text: Contact
-#   url: /contact/
+- text: Contact
+  url: /contact/
 # - text: Search
 #   url: /search/
 
