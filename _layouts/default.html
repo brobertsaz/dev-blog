@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="{{page.description}}" />
     {% endif %}
     {% if page.banner_image %}
-    <!-- <meta name="twitter:image" content="{{ "https://static.thebob.dev" | append: page.banner_image }}" /> -->
+    <meta name="twitter:image" content="{{ page.banner_image }}" />
     {% endif %}
     <link rel="manifest" href="/manifest.json">
     <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/prism.css" />
     <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
 
 </head>
 <body>

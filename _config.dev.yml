@@ -50,11 +50,11 @@ author_name: "Bob Roberts"
 author_bio: "Bob is a Ruby on Rails developer that loves learning and teaching."
 author_url:  "https://thebob.dev"
 author_location: "Madison, WI"
-author_image: /images/avatar.jpg
+# author_image: /images/avatar.jpg
 
 # Sidebar Add banner
 banner_url: "http://justgoodthemes.com"
-banner_image: images/banner.jpg
+# banner_image: images/banner.jpg
 
 # Sidebar newsletter widget - add your form action url for MailChimp signup form here
 mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
