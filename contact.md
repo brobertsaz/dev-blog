@@ -10,11 +10,11 @@ Have a question you want answered? Is there something you would like me to write
 <style>
 label {
 	display: inline-block;
-	width: 400px;
-	padding-bottom:25px;
+	width: 300px;
+	padding-bottom:15px;
 }
 input[type=text], input[type=email], input[type=textarea] {
-	width: 400px;
+	width: 300px;
 }
 input[type=submit] {
 	margin-top:25px;
@@ -35,7 +35,7 @@ textarea {
     <label>Email: <input type="text" name="email" size="40" required></label>
   </p>
   <p>
-    <label>Comments: <textarea name="comments" rows="4" cols="50" required></textarea></label>
+    <label>Comments: <textarea name="comments" rows="4" required></textarea></label>
   </p>
   <p>
     <button type="submit">Send</button>
